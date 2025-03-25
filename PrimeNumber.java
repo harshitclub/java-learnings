@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PrimeNumber {
 
     static void checkPrime(int n) {
@@ -20,8 +22,11 @@ public class PrimeNumber {
     }
 
     public static void main(String[] args) {
-        checkPrime(5);
-        checkPrime(6);
-        checkPrime(7);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number to check if it is prime or not!");
+        int num = sc.nextInt();
+        checkPrime(num);
+        sc.close();
     }
 }
